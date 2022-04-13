@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'AvatarBlock',
+  name: "AvatarBlock",
   props: {
     user: {
       type: Object,

@@ -1,10 +1,7 @@
 <template>
   <div class="popup-background">
     <div class="popup-container">
-      <md-button
-        class="md-fab md-mini md-primary button-close"
-        @click="closePopup"
-      >
+      <md-button class="md-fab md-mini md-primary button-close" @click="closePopup">
         <img src="../assets/baseline_close_black.png" alt="Close-icon" />
       </md-button>
       <InputData name="Алкоголь" :data="beer.alcohol" />

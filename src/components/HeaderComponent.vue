@@ -6,11 +6,11 @@
 </template>
 
 <script>
-import AvatarBlock from '../blocks/AvatarBlock.vue';
-import NavRouter from '../blocks/NavRouter.vue';
+import AvatarBlock from "../blocks/AvatarBlock.vue";
+import NavRouter from "../blocks/NavRouter.vue";
 
 export default {
-  name: 'HeaderComponent',
+  name: "HeaderComponent",
   components: {
     AvatarBlock,
     NavRouter,
@@ -22,7 +22,7 @@ export default {
     },
   },
   data: () => ({
-    name: 'header-avatar',
+    name: "header-avatar",
   }),
 };
 </script>
