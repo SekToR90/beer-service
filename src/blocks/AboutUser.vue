@@ -68,8 +68,9 @@ export default {
   flex-basis: 50%;
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 816px) {
   .user-data__box {
+    width: 250px;
     margin: 20px 0 0;
   }
 }

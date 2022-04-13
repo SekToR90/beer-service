@@ -61,7 +61,7 @@ export default {
   }
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 816px) {
   .personal-account {
     height: 100%;
     flex-direction: column;
