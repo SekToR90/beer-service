@@ -2,7 +2,7 @@
   <div class="user-data__box">
     <InputData name="Имя" :data="fullName" />
     <InputData name="Количество полных лет" :data="fullYears()" />
-    <InputData name="Должность" :data="user.employment.title" />
+    <InputData name="Должность" :data="checkingEmployment" />
   </div>
 </template>
 
@@ -54,6 +54,9 @@ export default {
   computed: {
     fullName() {
       return `${this.user.first_name || ""} ${this.user.last_name || ""}`;
+    },
+    checkingEmployment() {
+      return this.user.employment ? this.user.employment.title : "";
     },
   },
 };
