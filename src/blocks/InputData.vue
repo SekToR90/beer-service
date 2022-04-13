@@ -1,6 +1,8 @@
 <template>
   <md-field>
-    <label :htmlFor="name">{{ name }}</label>
+    <!-- eslint-disable-next-line vuejs-accessibility/label-has-for -->
+    <label for="name">{{ name }}</label>
+    <!-- eslint-disable-next-line vue/no-mutating-props -->
     <md-input type="text" :id="name" v-model="data" readonly></md-input>
   </md-field>
 </template>
