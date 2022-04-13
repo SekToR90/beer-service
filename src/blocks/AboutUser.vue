@@ -2,15 +2,15 @@
   <div class="user-data__box">
     <InputData name="Имя" :data="fullName" />
     <InputData name="Количество полных лет" :data="fullYears()" />
-    <!-- <InputData name="Должность" :data="user.employment.title" /> -->
+    <InputData name="Должность" :data="user.employment.title" />
   </div>
 </template>
 
 <script>
-import InputData from './InputData.vue';
+import InputData from "./InputData.vue";
 
 export default {
-  name: 'AboutUser',
+  name: "AboutUser",
   props: {
     user: {
       type: Object,
@@ -21,11 +21,10 @@ export default {
     InputData,
   },
   data: () => ({
-    name: 'main-avatar',
+    name: "main-avatar",
   }),
   methods: {
     fullYears() {
-      console.log(this.user);
       const date = new Date();
       if (this.user.date_of_birth !== undefined) {
         const year = this.user.date_of_birth.slice(0, 4);
@@ -49,12 +48,12 @@ export default {
 
         return age;
       }
-      return '';
+      return "";
     },
   },
   computed: {
     fullName() {
-      return `${this.user.first_name || ''} ${this.user.last_name || ''}`;
+      return `${this.user.first_name || ""} ${this.user.last_name || ""}`;
     },
   },
 };
