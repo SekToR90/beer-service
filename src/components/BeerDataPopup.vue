@@ -1,7 +1,10 @@
 <template>
   <div class="popup-background">
     <div class="popup-container">
-      <md-button class="md-fab md-mini md-primary button-close" @click="closePopup">
+      <md-button
+        class="md-fab md-mini md-primary button-close"
+        @click="closePopup"
+      >
         <img src="../assets/baseline_close_black.png" alt="Close-icon" />
       </md-button>
       <InputData name="Алкоголь" :data="beer.alcohol" />
@@ -15,10 +18,10 @@
 </template>
 
 <script>
-import InputData from '../blocks/InputData.vue';
+import InputData from "../blocks/InputData.vue";
 
 export default {
-  name: 'BeerDataPopup',
+  name: "BeerDataPopup",
   components: {
     InputData,
   },
@@ -60,5 +63,11 @@ export default {
 
 .button-close {
   align-self: end;
+}
+
+@media screen and (max-width: 660px) {
+  .popup-container {
+    width: 70%;
+  }
 }
 </style>

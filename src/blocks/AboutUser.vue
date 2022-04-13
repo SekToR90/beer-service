@@ -64,6 +64,13 @@ export default {
 
 <style scoped lang="scss">
 .user-data__box {
-  margin-left: 130px;
+  margin-right: 130px;
+  flex-basis: 50%;
+}
+
+@media screen and (max-width: 660px) {
+  .user-data__box {
+    margin: 20px 0 0;
+  }
 }
 </style>

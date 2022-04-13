@@ -13,12 +13,12 @@
 </template>
 
 <script>
-import AvatarBlock from '../blocks/AvatarBlock.vue';
-import RecommendedBeer from '../blocks/RecommendedBeer.vue';
-import AboutUser from '../blocks/AboutUser.vue';
+import AvatarBlock from "../blocks/AvatarBlock.vue";
+import RecommendedBeer from "../blocks/RecommendedBeer.vue";
+import AboutUser from "../blocks/AboutUser.vue";
 
 export default {
-  name: 'PersonalAccount',
+  name: "PersonalAccount",
   components: {
     AvatarBlock,
     RecommendedBeer,
@@ -37,7 +37,7 @@ export default {
     },
   },
   data: () => ({
-    name: 'main-avatar',
+    name: "main-avatar",
   }),
 };
 </script>
@@ -49,6 +49,7 @@ export default {
   margin: 0 auto 0;
   display: flex;
   align-items: center;
+  justify-content: space-around;
   background-color: #ffffff;
   box-shadow: -3px 4px 9px rgba(0, 0, 0, 0.25);
 
@@ -57,6 +58,20 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .personal-account {
+    height: 100%;
+    flex-direction: column;
+
+    &__container {
+      margin: 20px 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
 </style>
