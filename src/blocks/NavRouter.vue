@@ -6,6 +6,6 @@
 
 <script>
 export default {
-  name: "NavRouter",
+  name: 'NavRouter',
 };
 </script>

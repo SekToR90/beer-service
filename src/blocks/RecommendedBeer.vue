@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: "RecommendedBeer",
+  name: 'RecommendedBeer',
   props: {
     changingBeerVarietyApp: Function,
     onClickBeerData: Function,
@@ -44,7 +44,7 @@ export default {
 }
 
 .title {
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;

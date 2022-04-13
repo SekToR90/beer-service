@@ -15,10 +15,10 @@
 </template>
 
 <script>
-import InputData from "../blocks/InputData.vue";
+import InputData from '../blocks/InputData.vue';
 
 export default {
-  name: "BeerDataPopup",
+  name: 'BeerDataPopup',
   components: {
     InputData,
   },

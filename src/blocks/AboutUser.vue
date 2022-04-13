@@ -7,10 +7,10 @@
 </template>
 
 <script>
-import InputData from "./InputData.vue";
+import InputData from './InputData.vue';
 
 export default {
-  name: "AboutUser",
+  name: 'AboutUser',
   props: {
     user: {
       type: Object,
@@ -21,7 +21,7 @@ export default {
     InputData,
   },
   data: () => ({
-    name: "main-avatar",
+    name: 'main-avatar',
   }),
   methods: {
     fullYears() {
@@ -48,15 +48,15 @@ export default {
 
         return age;
       }
-      return "";
+      return '';
     },
   },
   computed: {
     fullName() {
-      return `${this.user.first_name || ""} ${this.user.last_name || ""}`;
+      return `${this.user.first_name || ''} ${this.user.last_name || ''}`;
     },
     checkingEmployment() {
-      return this.user.employment ? this.user.employment.title : "";
+      return this.user.employment ? this.user.employment.title : '';
     },
   },
 };

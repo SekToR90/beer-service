@@ -14,13 +14,13 @@
 </template>
 
 <script>
-import HeaderComponent from "./components/HeaderComponent.vue";
-import MainComponent from "./components/MainComponent.vue";
-import BeerDataPopup from "./components/BeerDataPopup.vue";
-import { getBeer, getUser } from "./api";
+import HeaderComponent from './components/HeaderComponent.vue';
+import MainComponent from './components/MainComponent.vue';
+import BeerDataPopup from './components/BeerDataPopup.vue';
+import { getBeer, getUser } from './api';
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     HeaderComponent,
     MainComponent,

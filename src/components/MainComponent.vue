@@ -10,10 +10,10 @@
 </template>
 
 <script>
-import PersonalAccount from "./PersonalAccount.vue";
+import PersonalAccount from './PersonalAccount.vue';
 
 export default {
-  name: "MainComponent",
+  name: 'MainComponent',
   components: {
     PersonalAccount,
   },
