@@ -1,8 +1,8 @@
 <template>
   <div class="user-data__box">
-    <InputData name="Имя" :data="fullName" />
-    <InputData name="Количество полных лет" :data="fullYears()" />
-    <InputData name="Должность" :data="checkingEmployment" />
+    <InputData name="Имя" :data="fullName" id="name" />
+    <InputData name="Количество полных лет" :data="fullYears()" id="age" />
+    <InputData name="Должность" :data="checkingEmployment" id="position" />
   </div>
 </template>
 

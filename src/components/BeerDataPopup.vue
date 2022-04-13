@@ -4,12 +4,12 @@
       <md-button class="md-fab md-mini md-primary button-close" @click="closePopup">
         <img src="../assets/baseline_close_black.png" alt="Close-icon" />
       </md-button>
-      <InputData name="Алкоголь" :data="beer.alcohol" />
-      <InputData name="Blg" :data="beer.blg" />
-      <InputData name="Бренд" :data="beer.brand" />
-      <InputData name="Солод" :data="beer.malts" />
-      <InputData name="Стиль" :data="beer.style" />
-      <InputData name="Дрожжи" :data="beer.yeast" />
+      <InputData name="Алкоголь" :data="beer.alcohol" id="alcohol"/>
+      <InputData name="Blg" :data="beer.blg" id="blg"/>
+      <InputData name="Бренд" :data="beer.brand" id="brand"/>
+      <InputData name="Солод" :data="beer.malts" id="solod"/>
+      <InputData name="Стиль" :data="beer.style" id="style"/>
+      <InputData name="Дрожжи" :data="beer.yeast" id="mushrooms"/>
     </div>
   </div>
 </template>

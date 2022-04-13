@@ -1,9 +1,9 @@
 <template>
   <md-field>
-    <!-- eslint-disable-next-line vuejs-accessibility/label-has-for -->
-    <label for="name">{{ name }}</label>
-    <!-- eslint-disable-next-line vue/no-mutating-props -->
-    <md-input type="text" :id="name" v-model="data" readonly></md-input>
+    <label :for="`${id}_input`">{{ name }}
+      <!-- eslint-disable-next-line vue/no-mutating-props -->
+      <input type="text" :id="`${id}_input`" v-model="data" readonly />
+    </label>
   </md-field>
 </template>
 
@@ -13,6 +13,7 @@ export default {
   props: {
     name: String,
     data: [String, Number],
+    id: String,
   },
 };
 </script>
