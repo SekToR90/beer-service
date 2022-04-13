@@ -13,12 +13,12 @@
 </template>
 
 <script>
-import AvatarBlock from "../blocks/AvatarBlock.vue";
-import RecommendedBeer from "../blocks/RecommendedBeer.vue";
-import AboutUser from "../blocks/AboutUser.vue";
+import AvatarBlock from '../blocks/AvatarBlock.vue';
+import RecommendedBeer from '../blocks/RecommendedBeer.vue';
+import AboutUser from '../blocks/AboutUser.vue';
 
 export default {
-  name: "PersonalAccount",
+  name: 'PersonalAccount',
   components: {
     AvatarBlock,
     RecommendedBeer,
@@ -37,7 +37,7 @@ export default {
     },
   },
   data: () => ({
-    name: "main-avatar",
+    name: 'main-avatar',
   }),
 };
 </script>

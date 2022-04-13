@@ -1,4 +1,4 @@
-import { ENDPOINDS } from "./endpoints";
+import { ENDPOINDS } from './endpoints';
 
 export async function getUser() {
   let result = {};

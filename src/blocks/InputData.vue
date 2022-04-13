@@ -1,16 +1,22 @@
 <template>
   <md-field>
-    <label :htmlFor="name">{{ name }}</label>
-    <md-input type="text" :id="name" v-model="data" readonly></md-input>
+    <label :for="`${id}_input`">{{ name }}</label>
+    <md-input
+      type="text"
+      :id="`${id}_input`"
+      v-model="data"
+      readonly
+    ></md-input>
   </md-field>
 </template>
 
 <script>
 export default {
-  name: "InputData",
+  name: 'InputData',
   props: {
     name: String,
     data: [String, Number],
+    id: String,
   },
 };
 </script>
