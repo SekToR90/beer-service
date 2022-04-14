@@ -47,4 +47,10 @@ $mainHeight: calc(100vh - $headerHeight);
     rgba(247, 249, 252, 0.95) 100%
   );
 }
+
+@media screen and (max-width: 740px) {
+  .main {
+    padding-top: 50px;
+  }
+}
 </style>

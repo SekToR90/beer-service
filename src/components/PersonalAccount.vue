@@ -15,7 +15,7 @@
 <script>
 import AvatarBlock from '../blocks/AvatarBlock.vue';
 import RecommendedBeer from '../blocks/RecommendedBeer.vue';
-import AboutUser from '../blocks/AboutUser.vue';
+import AboutUser from './AboutUser.vue';
 
 export default {
   name: 'PersonalAccount',
@@ -61,16 +61,21 @@ export default {
   }
 }
 
-@media screen and (max-width: 816px) {
+@media screen and (max-width: 740px) {
   .personal-account {
-    height: 100%;
+    &__container {
+      margin: 10px 10px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .personal-account {
+    height: 95%;
     flex-direction: column;
 
     &__container {
-      margin: 20px 0 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      margin: 10px 0 0;
     }
   }
 }

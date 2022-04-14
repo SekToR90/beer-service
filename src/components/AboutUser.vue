@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import InputData from './InputData.vue';
+import InputData from '../blocks/InputData.vue';
 
 export default {
   name: 'AboutUser',
@@ -68,7 +68,7 @@ export default {
   flex-basis: 50%;
 }
 
-@media screen and (max-width: 816px) {
+@media screen and (max-width: 740px) {
   .user-data__box {
     width: 250px;
     margin: 20px 0 0;

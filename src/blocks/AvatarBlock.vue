@@ -31,4 +31,18 @@ export default {
   height: 250px;
   border-radius: 50%;
 }
+
+@media screen and (max-width: 740px) {
+  .main-avatar {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .main-avatar {
+    width: 150px;
+    height: 150px;
+  }
+}
 </style>
