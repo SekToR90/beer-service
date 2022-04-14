@@ -61,15 +61,21 @@ export default {
   }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 896px) {
   .personal-account {
     &__container {
-      margin: 10px 10px 0;
+      margin: 10px;
     }
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 667px) {
+  .personal-account {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 414px) {
   .personal-account {
     height: 95%;
     flex-direction: column;

@@ -74,9 +74,9 @@ export default {
   }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 896px) {
   .title {
-    margin: 5px 0 5px;
+    margin: 10px 0 10px;
   }
 
   .about-beer__title {
@@ -94,6 +94,12 @@ export default {
     &.button-beer {
       margin: 10px 0 0;
     }
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .title {
+    margin: 5px 0 5px;
   }
 }
 </style>
