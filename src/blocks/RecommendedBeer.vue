@@ -74,7 +74,7 @@ export default {
   }
 }
 
-@media screen and (max-width: 896px) {
+@media screen and (max-width: 915px) {
   .title {
     margin: 10px 0 10px;
   }

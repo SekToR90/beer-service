@@ -32,6 +32,13 @@ export default {
   border-radius: 50%;
 }
 
+@media screen and (max-width: 915px) {
+  .main-avatar {
+    width: 130px;
+    height: 130px;
+  }
+}
+
 @media screen and (max-width: 896px) {
   .main-avatar {
     width: 150px;

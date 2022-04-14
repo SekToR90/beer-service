@@ -48,7 +48,7 @@ $mainHeight: calc(100vh - $headerHeight);
   );
 }
 
-@media screen and (max-width: 896px) {
+@media screen and (max-width: 915px) {
   .main {
     padding-top: 50px;
   }
