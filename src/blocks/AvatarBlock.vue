@@ -1,6 +1,19 @@
 <template>
-  <md-avatar class="md-primary avatar" v-bind:class="name">
-    <img class="avatar-img" :src="user.avatar" alt="Avatar" />
+  <md-avatar class="md-primary avatar" :class="name">
+    <img
+      class="avatar-img"
+      :src="user.avatar"
+      alt="Avatar"
+      @load="avatarImg()"
+      @error="errorImg()"
+      v-if="error === false"
+    />
+    <img
+      class="avatar-img"
+      src="../assets/sync_problem_black.svg"
+      alt="Avatar-error"
+      v-else-if="error === true"
+    />
   </md-avatar>
 </template>
 
@@ -13,6 +26,17 @@ export default {
       default: () => ({}),
     },
     name: String,
+  },
+  data: () => ({
+    error: false,
+  }),
+  methods: {
+    errorImg() {
+      this.error = true;
+    },
+    avatarImg() {
+      this.error = false;
+    },
   },
 };
 </script>

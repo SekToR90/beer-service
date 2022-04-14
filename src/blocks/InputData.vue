@@ -3,7 +3,13 @@
     <!--eslint-disable-next-line-->
     <label :for="`${id}_input`"
       >{{ name }}
-      <md-input type="text" :id="`${id}_input`" :value="data" readonly />
+      <md-input
+        type="text"
+        :id="`${id}_input`"
+        class="input-text"
+        :value="data"
+        readonly
+      />
     </label>
   </md-field>
 </template>
@@ -18,3 +24,9 @@ export default {
   },
 };
 </script>
+
+<style scoped lang="scss">
+.input-text {
+  width: 250px;
+}
+</style>

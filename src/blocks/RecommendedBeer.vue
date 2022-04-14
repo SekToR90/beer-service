@@ -60,6 +60,11 @@ export default {
 .about-beer {
   display: flex;
   align-items: center;
+
+  &__title {
+    max-width: 110px;
+    text-align: center;
+  }
 }
 
 .md-button {
