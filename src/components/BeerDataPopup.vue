@@ -1,19 +1,16 @@
 <template>
   <div class="popup-background">
     <div class="popup-container">
-      <md-button
-        class="md-fab md-mini md-primary button-close"
-        @click="closePopup"
-      >
+      <md-button class="md-fab md-mini md-primary button-close" @click="closePopup">
         <img src="../assets/baseline_close_black.png" alt="Close-icon" />
       </md-button>
       <div class="beer__info-container">
-        <InputData name="Алкоголь" :data="beer.alcohol" id="alcohol" />
-        <InputData name="Blg" :data="beer.blg" id="blg" />
-        <InputData name="Бренд" :data="beer.brand" id="brand" />
-        <InputData name="Солод" :data="beer.malts" id="malts" />
-        <InputData name="Стиль" :data="beer.style" id="style" />
-        <InputData name="Дрожжи" :data="beer.yeast" id="yeast" />
+        <InputData name="Алкоголь" :data="beer.alcohol" uniqueId="alcohol" />
+        <InputData name="Blg" :data="beer.blg" uniqueId="blg" />
+        <InputData name="Бренд" :data="beer.brand" uniqueId="brand" />
+        <InputData name="Солод" :data="beer.malts" uniqueId="malts" />
+        <InputData name="Стиль" :data="beer.style" uniqueId="style" />
+        <InputData name="Дрожжи" :data="beer.yeast" uniqueId="yeast" />
       </div>
     </div>
   </div>

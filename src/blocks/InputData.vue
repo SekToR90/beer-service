@@ -1,15 +1,10 @@
 <template>
   <md-field>
-    <!--eslint-disable-next-line-->
-    <label :for="`${id}_input`"
+    <!-- здесь eslint ругается, потому как используется <md-input> а не просто <input> -->
+    <!--eslint-disable-next-line vuejs-accessibility/label-has-for-->
+    <label :for="`${uniqueId}_input`"
       >{{ name }}
-      <md-input
-        type="text"
-        :id="`${id}_input`"
-        class="input-text"
-        :value="data"
-        readonly
-      />
+      <md-input type="text" :id="`${uniqueId}_input`" class="input-text" :value="data" readonly />
     </label>
   </md-field>
 </template>
@@ -20,7 +15,7 @@ export default {
   props: {
     name: String,
     data: [String, Number],
-    id: String,
+    uniqueId: String,
   },
 };
 </script>

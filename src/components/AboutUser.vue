@@ -1,8 +1,8 @@
 <template>
   <div class="user-data__box">
-    <InputData name="Имя" :data="fullName" id="name" />
-    <InputData name="Количество полных лет" :data="fullYears()" id="age" />
-    <InputData name="Должность" :data="checkingEmployment" id="employment" />
+    <InputData name="Имя" :data="fullName" uniqueId="name" />
+    <InputData name="Количество полных лет" :data="fullYears()" uniqueId="age" />
+    <InputData name="Должность" :data="checkingEmployment" uniqueId="employment" />
   </div>
 </template>
 
@@ -25,15 +25,15 @@ export default {
   }),
   methods: {
     fullYears() {
-      const date = new Date();
+      const now = new Date();
       if (this.user.date_of_birth !== undefined) {
         const year = this.user.date_of_birth.slice(0, 4);
         const month = this.user.date_of_birth.slice(5, 7);
         const day = this.user.date_of_birth.slice(8, 10);
 
-        let age = date.getFullYear() - year;
-        const differenceMonth = date.getMonth() - month + 1;
-        const differenceDay = date.getDate() - day;
+        let age = now.getFullYear() - year;
+        const differenceMonth = now.getMonth() - month + 1;
+        const differenceDay = now.getDate() - day;
 
         if (differenceMonth < 0) {
           age -= 1;

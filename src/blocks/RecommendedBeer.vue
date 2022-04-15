@@ -3,17 +3,11 @@
     <h2 class="title">Рекомендованное пиво:</h2>
     <div class="about-beer">
       <p class="about-beer__title">{{ beer.name }}</p>
-      <md-button
-        class="md-fab md-mini md-primary button-beer_about"
-        @click="openBeerPopup"
-      >
+      <md-button class="md-fab md-mini md-primary button-beer_about" @click="openBeerPopup">
         <img src="../assets/baseline_summarize_black.png" alt="Menu" />
       </md-button>
     </div>
-    <md-button
-      class="md-raised md-primary button-beer"
-      @click="onClickButtonBeer"
-    >
+    <md-button class="md-raised md-primary button-beer" @click="onClickButtonBeer">
       Выбрать еще раз
       <img src="../assets/baseline_casino_black.png" alt="Menu" />
     </md-button>
